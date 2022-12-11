@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="js/login.js"></script>
+<script src="js/apiUtil.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<script>
+	$(document).ready(function(){
+		login.bindEvents();
+	});
+</script>
+</head>
+<body>
+	<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal image header">
+      <!--<img src="assets/images/logo.png" class="image">-->
+      <div class="content">
+        Log-in to your account
+      </div>
+    </h2>
+    <form class="ui large form">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" id="emailId" name="email" placeholder="E-mail address">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" id="password" name="password" placeholder="Password">
+          </div>
+        </div>
+        <div id="submitBtn" class="ui fluid large teal submit button">Login</div>
+      </div>
+
+      <div class="ui error message"></div>
+
+    </form>
+
+    <div class="ui message" id="signupBtn">
+      New to us? <a href="#">Sign Up</a>
+    </div>
+  </div>
+</div>
+	
+</body>
+</html>
+
+<!-- <input type="text" id="userName" placeholder="Enter username">
+	<input type="password" id="password" placeholder="Password">
+	<input type="button" id="submitBtn" value="Login">
+	 -->

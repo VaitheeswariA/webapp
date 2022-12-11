@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="../js/dashboard.js"></script>
+<script src="../js/apiUtil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.0/dist/semantic.min.js"></script>
+<!--  <link rel="stylesheet" type="text/css" href="../dashboard.css">-->
+<script>
+	$(document).ready(function(){
+		dashboard.bindEvents();
+	});
+</script>
+</head>
+<body>
+	<div class="ui">
+		<div class="ui tabular menu">
+  			<a class="active item" id="searchBusBtn">Search Bus</a>
+  			<a class="item" id="historyBtn">Booking History</a>
+		</div>
+		<div id="contentdiv" class="ui segment">
+			<div class="ui form">
+	  			<div class="fields">
+				    <div class="three wide field">
+				      <label>From</label>
+				      <input type="text" id="fromLocation" name="source" maxlength="16" placeholder="Enter starting point">
+				    </div>
+				    <div class="three wide field">
+				      <label>To</label>
+				      <input type="text" id="toLocation" name="destination" maxlength="16" placeholder="Enter ending point">
+				    </div>
+				    <div class="two wide field">
+				      <label>Travel Date</label>
+				      <input type="text" id="travelDate" name="date" maxlength="16" placeholder="yyyy-mm-dd">
+				    </div>
+				    <div class="two wide field center">
+				     	<label style="color:white;">.</label>
+						<button class="ui primary button" id="searchBus">Search</button>
+				    </div>
+				  </div>
+			</div>
+		</div>
+		<div id="busListdiv" class="ui segment">
+			<!-- <table class="ui single line table">
+			  <thead>
+			    <tr>
+			      <th ></th>
+			  </thead>
+			  </table>-->
+		</div>
+  	</div>
+</body>
+</html>
